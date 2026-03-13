@@ -66,23 +66,23 @@ const Events = () => {
   const formatDate = (dateStr) => {
     if (!dateStr) return '';
     const date = new Date(dateStr);
-    return date.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
+    return date.toLocaleDateString(t('nav.lang_code') === 'en' ? 'en-US' : 'es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
   };
 
   return (
     <div className="events-page">
       <header className="page-header">
         <div className="container">
-          <span className="section-label">Actividades</span>
-          <h1>Próximos Eventos</h1>
-          <p>Mantente al tanto de nuestros próximos encuentros, conferencias y reuniones especiales.</p>
+          <span className="section-label">{t('events.label')}</span>
+          <h1>{t('events.title')}</h1>
+          <p>{t('events.subtitle')}</p>
         </div>
       </header>
 
       <section className="section-padding">
         <div className="container">
           {loading ? (
-            <div className="text-center py-40">Cargando eventos...</div>
+            <div className="text-center py-40">{t('events.loading')}</div>
           ) : (
             <div className="events-grid grid md-grid-2 lg-grid-3 gap-30">
               {events.map(event => (
@@ -110,7 +110,7 @@ const Events = () => {
                     <p>{event.description}</p>
                     <div className="event-actions">
                       <button className="btn-link">
-                        SABER MÁS <ChevronRight size={16} />
+                        {t('events.read_more')} <ChevronRight size={16} />
                       </button>
                       <button className="share-btn-icon"><Share2 size={16} /></button>
                     </div>
@@ -123,8 +123,8 @@ const Events = () => {
           {events.length === 0 && !loading && (
             <div className="text-center py-60 bg-light border-radius-15">
               <Calendar size={48} className="opacity-20 mb-20" />
-              <h3>No hay eventos programados</h3>
-              <p>Por el momento no tenemos eventos registrados. ¡Vuelve pronto!</p>
+              <h3>{t('events.no_events')}</h3>
+              <p>{t('events.no_events_desc')}</p>
             </div>
           )}
         </div>
@@ -134,10 +134,10 @@ const Events = () => {
       <section className="service-alert bg-primary text-white py-40">
         <div className="container flex align-center justify-between flex-mobile-column gap-20 text-center-mobile">
           <div>
-            <h2 className="mb-0" style={{color: 'white'}}>¿Eres nuevo en Maranatha?</h2>
-            <p className="opacity-80 mb-0">Nos encantaría conocerte en nuestro próximo servicio dominical.</p>
+            <h2 className="mb-0" style={{color: 'white'}}>{t('events.new_here')}</h2>
+            <p className="opacity-80 mb-0">{t('events.new_here_desc')}</p>
           </div>
-          <a href="/#contact" className="btn-accent">PLANEA TU VISITA</a>
+          <a href="/#contact" className="btn-accent">{t('events.plan_visit')}</a>
         </div>
       </section>
     </div>

@@ -38,9 +38,9 @@ const FAQ = () => {
     <div className="faq-page">
       <header className="page-header">
         <div className="container">
-          <span className="section-label">Ayuda</span>
-          <h1>Preguntas Frecuentes</h1>
-          <p>Encuentra respuestas a las dudas más comunes sobre nuestra comunidad.</p>
+          <span className="section-label">{t('faq.label')}</span>
+          <h1>{t('faq.title')}</h1>
+          <p>{t('faq.subtitle')}</p>
         </div>
       </header>
 
@@ -71,11 +71,11 @@ const FAQ = () => {
 
           <div className="faq-more-help mt-60 text-center p-40 border-radius-15 bg-light shadow-sm">
             <HelpCircle size={48} className="color-accent mb-20" />
-            <h3>¿No encontraste lo que buscabas?</h3>
-            <p className="mb-20">Estamos aquí para ayudarte en lo que necesites. No dudes en contactarnos directamente.</p>
+            <h3>{t('faq.not_found')}</h3>
+            <p className="mb-20">{t('faq.not_found_desc')}</p>
             <div className="flex justify-center gap-20 flex-mobile-column">
-              <a href="/#contact" className="btn-primary">Enviar Mensaje</a>
-              <a href="tel:+11234567890" className="btn-primary-outline">Llamar Ahora</a>
+              <a href="/#contact" className="btn-primary">{t('faq.send_message')}</a>
+              <a href="tel:+11234567890" className="btn-primary-outline">{t('faq.call_now')}</a>
             </div>
           </div>
         </div>

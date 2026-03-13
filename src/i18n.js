@@ -14,7 +14,8 @@ const resources = {
         "events": "Events",
         "contact": "Contact",
         "login": "Login",
-        "register": "Register"
+        "register": "Register",
+        "lang_code": "en"
       },
       "hero": {
         "label": "WORLD MISSION MARANATHA",
@@ -79,6 +80,52 @@ const resources = {
           "faq": "FAQ"
         }
       },
+      "events": {
+        "label": "Activities",
+        "title": "Upcoming Events",
+        "subtitle": "Stay informed about our upcoming meetings, conferences and special gatherings.",
+        "loading": "Loading events...",
+        "read_more": "READ MORE",
+        "no_events": "No events scheduled",
+        "no_events_desc": "At the moment we have no registered events. Come back soon!",
+        "new_here": "Are you new to Maranatha?",
+        "new_here_desc": "We would love to meet you at our next Sunday service.",
+        "plan_visit": "PLAN YOUR VISIT"
+      },
+      "faq": {
+        "label": "Help",
+        "title": "Frequently Asked Questions",
+        "subtitle": "Find answers to the most common questions about our community.",
+        "not_found": "Didn't find what you were looking for?",
+        "not_found_desc": "We are here to help you with whatever you need. Do not hesitate to contact us directly.",
+        "send_message": "Send Message",
+        "call_now": "Call Now"
+      },
+      "privacy": {
+        "label": "Legal",
+        "title": "Privacy Policy",
+        "subtitle": "Committed to protecting your information and our spiritual mission.",
+        "p1": "At Maranatha World Mission, we value and respect the privacy of every member of our community, visitors and collaborators. This Privacy Policy describes how we collect, use and share your personal information when you interact with us through our website, religious services and ministerial activities.",
+        "s1_title": "1. Our Ethical Commitment",
+        "s1_p": "As a Christian ministry, we handle your information with integrity and respect. We do not sell or rent your personal data to third parties. Your trust is fundamental to our spiritual work.",
+        "s2_title": "2. Information We Collect",
+        "s2_p": "We collect information that you directly provide to us when:",
+        "s2_l1": "You register for events or membership.",
+        "s2_l2": "You send prayer requests (these are handled with strict ministerial confidentiality).",
+        "s2_l3": "You make donations or tithes through secure platforms.",
+        "s2_l4": "You sign up as a volunteer in our various ministries.",
+        "s3_title": "3. Use of Image and Multimedia",
+        "s3_p": "During our services and public events, we may capture photos or videos for use on our social media, live streams and ministry promotion materials. If you do not wish to be included in this material, please let our reception staff know.",
+        "s4_title": "4. Data Security",
+        "s4_p": "We implement technical and organizational security measures to protect your personal data against unauthorized access, loss or alteration. Financial transactions are processed through certified payment service providers with bank-level encryption.",
+        "s5_title": "5. Minors",
+        "s5_p": "The privacy of children is a priority. We do not collect personal information from children under 13 without the explicit consent of their parents or legal guardians.",
+        "s6_title": "6. Your Rights",
+        "s6_p": "You have the right to access, correct or request the deletion of your personal data. To exercise these rights, you can contact us through the means indicated in our contact section.",
+        "questions": "Do you have questions about this policy?",
+        "questions_desc": "We are here to clarify any doubt about how we take care of your information in the ministry.",
+        "contact_btn": "Contact Administration"
+      },
       "sermons": {
         "title": "SERMONS",
         "subtitle": "Spiritual resources for your growth",
@@ -103,7 +150,8 @@ const resources = {
         "events": "Eventos",
         "contact": "Contacto",
         "login": "Ingresar",
-        "register": "Registro"
+        "register": "Registro",
+        "lang_code": "es"
       },
       "hero": {
         "label": "MISIÓN MUNDIAL MARANATHA",
@@ -167,6 +215,52 @@ const resources = {
           "privacy": "Política de Privacidad",
           "faq": "Preguntas Frecuentes"
         }
+      },
+      "events": {
+        "label": "Actividades",
+        "title": "Próximos Eventos",
+        "subtitle": "Mantente al tanto de nuestros próximos encuentros, conferencias y reuniones especiales.",
+        "loading": "Cargando eventos...",
+        "read_more": "SABER MÁS",
+        "no_events": "No hay eventos programados",
+        "no_events_desc": "Por el momento no tenemos eventos registrados. ¡Vuelve pronto!",
+        "new_here": "¿Eres nuevo en Maranatha?",
+        "new_here_desc": "Nos encantaría conocerte en nuestro próximo servicio dominical.",
+        "plan_visit": "PLANEA TU VISITA"
+      },
+      "faq": {
+        "label": "Ayuda",
+        "title": "Preguntas Frecuentes",
+        "subtitle": "Encuentra respuestas a las dudas más comunes sobre nuestra comunidad.",
+        "not_found": "¿No encontraste lo que buscabas?",
+        "not_found_desc": "Estamos aquí para ayudarte en lo que necesites. No dudes en contactarnos directamente.",
+        "send_message": "Enviar Mensaje",
+        "call_now": "Llamar Ahora"
+      },
+      "privacy": {
+        "label": "Legal",
+        "title": "Política de Privacidad",
+        "subtitle": "Comprometidos con la protección de tu información y nuestra misión espiritual.",
+        "p1": "En Maranatha World Mission, valoramos y respetamos la privacidad de cada miembro de nuestra comunidad, visitantes y colaboradores. Esta Política de Privacidad describe cómo recopilamos, utilizamos y compartimos su información personal cuando interactúa con nosotros a través de nuestro sitio web, servicios religiosos y actividades ministeriales.",
+        "s1_title": "1. Nuestro Compromiso Ético",
+        "s1_p": "Como ministerio cristiano, manejamos su información con integridad y respeto. No vendemos ni alquilamos sus datos personales a terceros. Su confianza es fundamental para nuestra labor espiritual.",
+        "s2_title": "2. Información que Recopilamos",
+        "s2_p": "Recopilamos información que usted nos proporciona directamente cuando:",
+        "s2_l1": "Se registra para eventos o membresía.",
+        "s2_l2": "Envía peticiones de oración (estas se manejan con estricta confidencialidad ministerial).",
+        "s2_l3": "Realiza donaciones o diezmos a través de plataformas seguras.",
+        "s2_l4": "Se inscribe como voluntario en nuestros diversos ministerios.",
+        "s3_title": "3. Uso de Imagen y Multimedia",
+        "s3_p": "Durante nuestros servicios y eventos públicos, podemos capturar fotos o videos para uso en nuestras redes sociales, transmisiones en vivo y materiales de promoción del ministerio. Si usted no desea ser incluido en este material, por favor comuníquelo a nuestro personal de recepción.",
+        "s4_title": "4. Seguridad de los Datos",
+        "s4_p": "Implementamos medidas de seguridad técnicas y organizativas para proteger sus datos personales contra el acceso no autorizado, la pérdida o la alteración. Las transacciones financieras se procesan a través de proveedores de servicios de pago certificados con encriptación de nivel bancario.",
+        "s5_title": "5. Menores de Edad",
+        "s5_p": "La privacidad de los niños es prioritaria. No recopilamos información personal de menores de 13 años sin el consentimiento explícito de sus padres o tutores legales.",
+        "s6_title": "6. Sus Derechos",
+        "s6_p": "Usted tiene derecho a acceder, corregir o solicitar la eliminación de sus datos personales. Para ejercer estos derechos, puede contactarnos a través de los medios indicativos en nuestra sección de contacto.",
+        "questions": "¿Tiene preguntas sobre esta política?",
+        "questions_desc": "Estamos aquí para aclararle cualquier duda sobre cómo cuidamos de su información en el ministerio.",
+        "contact_btn": "Contactar con la Administración"
       },
       "sermons": {
         "title": "SERMONES",
