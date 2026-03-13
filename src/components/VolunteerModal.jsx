@@ -30,7 +30,7 @@ const VolunteerModal = ({ isOpen, onClose }) => {
       setSubmitted(true);
     } catch (error) {
       console.error("Error submitting volunteer form:", error);
-      alert("Error al enviar el formulario. Por favor intenta de nuevo.");
+      alert(t('volunteer.error'));
     } finally {
       setLoading(false);
     }
@@ -43,10 +43,10 @@ const VolunteerModal = ({ isOpen, onClose }) => {
           <div className="success-icon">
             <CheckCircle size={40} />
           </div>
-          <h2>¡Gracias por participar!</h2>
-          <p>Tus datos han sido registrados con éxito. Pronto serás contactado por uno de nuestro personal.</p>
+          <h2>{t('volunteer.thanks')}</h2>
+          <p>{t('volunteer.success')}</p>
           <button className="btn-primary" style={{marginTop: '20px', width: '100%'}} onClick={onClose}>
-            CERRAR
+            {t('volunteer.close')}
           </button>
         </div>
       );
@@ -56,9 +56,9 @@ const VolunteerModal = ({ isOpen, onClose }) => {
       case 1:
         return (
           <div className="form-step">
-            <h3 className="mb-20">Datos Personales</h3>
+            <h3 className="mb-20">{t('volunteer.title')}</h3>
             <div className="form-group">
-              <label>Nombre</label>
+              <label>{t('volunteer.first_name')}</label>
               <input 
                 type="text" className="form-control" required
                 value={formData.firstName}
@@ -66,7 +66,7 @@ const VolunteerModal = ({ isOpen, onClose }) => {
               />
             </div>
             <div className="form-group">
-              <label>Apellido</label>
+              <label>{t('volunteer.last_name')}</label>
               <input 
                 type="text" className="form-control" required
                 value={formData.lastName}
@@ -75,7 +75,7 @@ const VolunteerModal = ({ isOpen, onClose }) => {
             </div>
             <div className="flex gap-20">
               <div className="form-group" style={{flex: 1}}>
-                <label>Edad</label>
+                <label>{t('volunteer.age')}</label>
                 <input 
                   type="number" className="form-control" required
                   value={formData.age}
@@ -83,7 +83,7 @@ const VolunteerModal = ({ isOpen, onClose }) => {
                 />
               </div>
               <div className="form-group" style={{flex: 2}}>
-                <label>Teléfono</label>
+                <label>{t('volunteer.phone')}</label>
                 <input 
                   type="tel" className="form-control" required
                   value={formData.phone}
@@ -95,16 +95,16 @@ const VolunteerModal = ({ isOpen, onClose }) => {
               className="btn-accent" style={{width: '100%', marginTop: '20px'}}
               onClick={() => step1Valid() && setStep(2)}
             >
-              SIGUIENTE
+              {t('volunteer.next')}
             </button>
           </div>
         );
       case 2:
         return (
           <div className="form-step">
-            <h3 className="mb-20">Información de Contacto</h3>
+            <h3 className="mb-20">{t('volunteer.contact_info')}</h3>
             <div className="form-group">
-              <label>Correo Electrónico</label>
+              <label>{t('volunteer.email')}</label>
               <input 
                 type="email" className="form-control" required
                 value={formData.email}
@@ -112,21 +112,21 @@ const VolunteerModal = ({ isOpen, onClose }) => {
               />
             </div>
             <div className="form-group">
-              <label>¿Eres creyente?</label>
+              <label>{t('volunteer.is_believer')}</label>
               <div className="radio-group">
                 <label className="radio-option">
                   <input 
                     type="radio" name="isBeliever" value="yes" 
                     checked={formData.isBeliever === 'yes'}
                     onChange={e => setFormData({...formData, isBeliever: 'yes'})}
-                  /> Sí
+                  /> {t('volunteer.yes')}
                 </label>
                 <label className="radio-option">
                   <input 
                     type="radio" name="isBeliever" value="no" 
                     checked={formData.isBeliever === 'no'}
                     onChange={e => setFormData({...formData, isBeliever: 'no'})}
-                  /> No
+                  /> {t('volunteer.no')}
                 </label>
               </div>
             </div>
@@ -134,7 +134,7 @@ const VolunteerModal = ({ isOpen, onClose }) => {
             {formData.isBeliever === 'yes' && (
               <div className="form-step">
                 <div className="form-group mt-20">
-                  <label>¿Hace cuántos años?</label>
+                  <label>{t('volunteer.how_many_years')}</label>
                   <input 
                     type="number" className="form-control" 
                     value={formData.yearsAsBeliever}
@@ -147,19 +147,19 @@ const VolunteerModal = ({ isOpen, onClose }) => {
             {formData.isBeliever === 'no' && (
               <div className="form-step">
                 <div className="form-group mt-20">
-                  <label>¿Te gustaría unirte a nuestro grupo de voluntarios?</label>
+                  <label>{t('volunteer.join_volunteers')}</label>
                   <div className="radio-group">
                     <label className="radio-option">
                       <input 
                         type="radio" name="joinVolunteers" value="yes" 
                         onChange={() => setFormData({...formData, joinVolunteers: 'yes'})}
-                      /> Sí
+                      /> {t('volunteer.yes')}
                     </label>
                     <label className="radio-option">
                       <input 
                         type="radio" name="joinVolunteers" value="no" 
                         onChange={() => setFormData({...formData, joinVolunteers: 'no'})}
-                      /> No
+                      /> {t('volunteer.no')}
                     </label>
                   </div>
                 </div>
@@ -167,13 +167,13 @@ const VolunteerModal = ({ isOpen, onClose }) => {
             )}
 
             <div className="flex gap-20" style={{marginTop: '30px'}}>
-              <button className="btn-outline" style={{flex: 1}} onClick={() => setStep(1)}>VOLVER</button>
+              <button className="btn-outline" style={{flex: 1}} onClick={() => setStep(1)}>{t('volunteer.back')}</button>
               <button 
                 className="btn-accent" style={{flex: 2}} 
                 onClick={handleSubmit}
                 disabled={loading || !formData.email || !formData.isBeliever}
               >
-                {loading ? 'ENVIANDO...' : 'FINALIZAR'}
+                {loading ? t('volunteer.sending') : t('volunteer.finish')}
               </button>
             </div>
           </div>
@@ -185,7 +185,7 @@ const VolunteerModal = ({ isOpen, onClose }) => {
 
   const step1Valid = () => {
     if (!formData.firstName || !formData.lastName || !formData.age || !formData.phone) {
-      alert("Por favor completa todos los campos");
+      alert(t('volunteer.complete_fields'));
       return false;
     }
     return true;
