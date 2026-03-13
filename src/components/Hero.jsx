@@ -9,24 +9,23 @@ const Hero = () => {
   return (
     <>
       <section className="hero">
+        <div className="hero-map-overlay"></div>
         <div className="container">
-          <div className="hero-content">
-            <span className="section-label" style={{color: '#C5A46D', letterSpacing: '3px'}}>{t('hero.label')}</span>
-            <h1 style={{marginTop: '10px'}}>{t('hero.title')}</h1>
-            <p className="hero-schedule" style={{color: 'white', fontSize: '1.2rem', marginTop: '15px', opacity: 0.9, fontWeight: '500'}}>
-              {t('hero.schedule')}
-            </p>
-            <div style={{marginTop: '30px'}}>
-              <button 
-                className="btn-outline" 
-                onClick={() => setIsModalOpen(true)}
-              >
-                {t('hero.cta')}
-              </button>
+          <div className="hero-grid-layout">
+            <div className="hero-content">
+              <h1 className="hero-title-main">{t('hero.title')}</h1>
+              <p className="hero-description-main">{t('hero.subtitle')}</p>
+              <div className="hero-actions-main">
+                <a href="/sermones" className="btn-hero-main">
+                  {t('hero.cta')}
+                </a>
+              </div>
+            </div>
+            <div className="hero-logo-side">
+              <img src="/images/banner-logo.png" alt="Maranatha Logo" className="hero-large-logo" />
             </div>
           </div>
         </div>
-        <img src="/images/ICONOPNG.png" alt="Icon Background" className="hero-icon-bg" />
       </section>
 
       <VolunteerModal 

@@ -19,9 +19,10 @@ const resources = {
       },
       "hero": {
         "label": "WORLD MISSION MARANATHA",
-        "title": "Spread the Gospel to Every Creature",
+        "title": "SHARING THE GOSPEL TO THE WORLD",
+        "subtitle": "We are a global ministry committed to spreading the Word of God and preparing for the return of Jesus Christ.",
         "schedule": "Services: Sundays at 9:30 AM",
-        "cta": "GET INVOLVED"
+        "cta": "WATCH SERMONS"
       },
       "highlights": {
         "mission_desc": "Learn about our mission to spread the gospel globally",
@@ -180,9 +181,10 @@ const resources = {
       },
       "hero": {
         "label": "MISIÓN MUNDIAL MARANATHA",
-        "title": "Llevad el Evangelio a Toda Criatura",
+        "title": "COMPARTIENDO EL EVANGELIO AL MUNDO",
+        "subtitle": "Somos un ministerio global comprometido a difundir la Palabra de Dios y prepararnos para el regreso de Jesucristo.",
         "schedule": "Servicios: Domingos a las 9:30 AM",
-        "cta": "PARTICIPAR"
+        "cta": "VER SERMONES"
       },
       "highlights": {
         "mission_desc": "Conoce nuestra misión de llevar el evangelio a todo el mundo",
