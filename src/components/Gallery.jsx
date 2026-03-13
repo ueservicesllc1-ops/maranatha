@@ -36,7 +36,7 @@ const Gallery = () => {
           <span className="section-label" style={{color: '#C5A46D'}}>{t('gallery.label')}</span>
           <h1 style={{fontSize: '42px'}}>{t('gallery.title')}</h1>
           <p style={{opacity: 0.8, maxWidth: '600px', margin: '20px auto'}}>
-            Capturando momentos especiales de nuestra obra misionera y comunidad.
+            {t('gallery.desc')}
           </p>
         </div>
       </div>

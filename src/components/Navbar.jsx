@@ -95,7 +95,7 @@ const Navbar = () => {
             <a href="/#about" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>{t('nav.about')}</a>
             <Link to="/sermones" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>{t('nav.sermons')}</Link>
             <Link to="/galeria" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>{t('nav.gallery')}</Link>
-            <Link to="/eventos" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>Eventos</Link>
+            <Link to="/eventos" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>{t('nav.events')}</Link>
             <a href="/#contact" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>{t('nav.contact')}</a>
             
             <div className="mobile-only-auth">

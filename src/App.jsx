@@ -34,7 +34,7 @@ const HomePage = () => {
             </div>
             <div className="card-content">
               <h3>{t('nav.mission')}</h3>
-              <p>Learn about our mission to spread the gospel globally</p>
+              <p>{t('highlights.mission_desc')}</p>
             </div>
           </div>
           <div className="highlight-card">
@@ -43,7 +43,7 @@ const HomePage = () => {
             </div>
             <div className="card-content">
               <h3>{t('nav.sermons')}</h3>
-              <p>Watch or listen to our latest sermons and teachings</p>
+              <p>{t('highlights.sermons_desc')}</p>
             </div>
           </div>
           <div className="highlight-card">
@@ -51,8 +51,8 @@ const HomePage = () => {
               <Calendar size={32} color="#1F2346" />
             </div>
             <div className="card-content">
-              <h3>Upcoming Events</h3>
-              <p>Join us for our upcoming events and outreach programs.</p>
+              <h3>{t('highlights.events')}</h3>
+              <p>{t('highlights.events_desc')}</p>
             </div>
           </div>
         </div>
@@ -67,7 +67,7 @@ const HomePage = () => {
             <p className="description">
               {t('about.p1')} {t('about.p2')}
             </p>
-            <button className="btn-primary-outline">LEARN MORE</button>
+              <button className="btn-primary-outline">{t('about.learn_more')}</button>
           </div>
           <div className="about-image">
             <img src="/images/church_modern_exterior_1773427949943.png" alt="Church Building" />
@@ -78,7 +78,7 @@ const HomePage = () => {
       {/* CTA Section */}
       <section className="cta-section">
         <div className="container text-center">
-          <h2>JOIN US IN SPREADING THE GOOD NEWS OF JESUS CHRIST</h2>
+          <h2>{t('cta.title')}</h2>
           <button className="btn-accent">{t('hero.cta')}</button>
         </div>
       </section>
@@ -124,29 +124,29 @@ const HomePage = () => {
         <div className="container">
           <div className="contact-grid">
             <div className="contact-info">
-              <span className="section-label">{t('nav.contact')}</span>
-              <h2>GET IN TOUCH</h2>
-              <p>Have questions or want to learn more about our ministry? We'd love to hear from you.</p>
+              <span className="section-label">{t('contact.label')}</span>
+              <h2>{t('contact.title')}</h2>
+              <p>{t('contact.desc')}</p>
               
               <div className="contact-details">
                 <div className="detail-item">
                   <div className="detail-icon"><Phone size={20} /></div>
                   <div>
-                    <h4 style={{marginBottom: '5px', fontSize: '14px'}}>Call Us</h4>
+                    <h4 style={{marginBottom: '5px', fontSize: '14px'}}>{t('contact.call')}</h4>
                     <p style={{margin: 0, fontSize: '14px', opacity: 0.8}}>+1 (123) 456-7890</p>
                   </div>
                 </div>
                 <div className="detail-item">
                   <div className="detail-icon"><Mail size={20} /></div>
                   <div>
-                    <h4 style={{marginBottom: '5px', fontSize: '14px'}}>Email</h4>
+                    <h4 style={{marginBottom: '5px', fontSize: '14px'}}>{t('contact.email')}</h4>
                     <p style={{margin: 0, fontSize: '14px', opacity: 0.8}}>info@maranathamission.org</p>
                   </div>
                 </div>
                 <div className="detail-item">
                   <div className="detail-icon"><MapPin size={20} /></div>
                   <div>
-                    <h4 style={{marginBottom: '5px', fontSize: '14px'}}>Location</h4>
+                    <h4 style={{marginBottom: '5px', fontSize: '14px'}}>{t('contact.location')}</h4>
                     <p style={{margin: 0, fontSize: '14px', opacity: 0.8}}>33/CTWats Sec- Ody, 20300 - 43256</p>
                   </div>
                 </div>
@@ -157,23 +157,23 @@ const HomePage = () => {
               <form className="contact-form">
                 <div className="grid md-grid-2 gap-20">
                   <div className="form-group">
-                    <label>Full Name</label>
-                    <input type="text" className="form-control" placeholder="Your Name" />
+                    <label>{t('contact.form.name')}</label>
+                    <input type="text" className="form-control" placeholder={t('contact.form.name_placeholder')} />
                   </div>
                   <div className="form-group">
-                    <label>Email Address</label>
+                    <label>{t('contact.form.email')}</label>
                     <input type="email" className="form-control" placeholder="your@email.com" />
                   </div>
                 </div>
                 <div className="form-group">
-                  <label>Subject</label>
-                  <input type="text" className="form-control" placeholder="How can we help?" />
+                  <label>{t('contact.form.subject')}</label>
+                  <input type="text" className="form-control" placeholder={t('contact.form.subject_placeholder')} />
                 </div>
                 <div className="form-group">
-                  <label>Message</label>
-                  <textarea className="form-control" placeholder="Your message here..."></textarea>
+                  <label>{t('contact.form.message')}</label>
+                  <textarea className="form-control" placeholder={t('contact.form.message_placeholder')}></textarea>
                 </div>
-                <button type="button" className="btn-primary" style={{width: '100%'}}>SEND MESSAGE</button>
+                <button type="button" className="btn-primary" style={{width: '100%'}}>{t('contact.form.send')}</button>
               </form>
             </div>
           </div>
@@ -187,22 +187,22 @@ const HomePage = () => {
             <div className="service-icon-wrapper">
               <Globe2 size={48} color="#1F2346" className="opacity-70" />
             </div>
-            <h4>GLOBAL OUTREACH</h4>
-            <p>Sharing the gospel worldwide</p>
+            <h4>{t('features.outreach')}</h4>
+            <p>{t('features.outreach_desc')}</p>
           </div>
           <div className="service-item">
             <div className="service-icon-wrapper">
               <BookOpen size={48} color="#1F2346" className="opacity-70" />
             </div>
-            <h4>BIBLICAL TEACHING</h4>
-            <p>Preaching God's Word faithfully</p>
+            <h4>{t('features.biblical')}</h4>
+            <p>{t('features.biblical_desc')}</p>
           </div>
           <div className="service-item">
             <div className="service-icon-wrapper">
               <Heart size={48} color="#1F2346" className="opacity-70" />
             </div>
-            <h4>COMMUNITY SUPPORT</h4>
-            <p>Helping the needy and brokenhearted</p>
+            <h4>{t('features.community')}</h4>
+            <p>{t('features.community_desc')}</p>
           </div>
         </div>
       </section>
