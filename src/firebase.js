@@ -5,13 +5,13 @@ import { getStorage } from "firebase/storage";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBtqdgtj9dfSC7wNwME0mt7U-N8_vV3CRs",
-  authDomain: "maranatha-ceea2.firebaseapp.com",
-  projectId: "maranatha-ceea2",
-  storageBucket: "maranatha-ceea2.firebasestorage.app",
-  messagingSenderId: "609634718027",
-  appId: "1:609634718027:web:9de24d9edf3d22da0398ce",
-  measurementId: "G-DTGG295SD5"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
