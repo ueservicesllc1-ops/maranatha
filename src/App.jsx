@@ -9,7 +9,7 @@ import Gallery from './components/Gallery';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import FAQ from './components/FAQ';
 import Events from './components/Events';
-import { Globe2, PlusSquare, Calendar, BookOpen, Heart, Mail, Phone, MapPin } from 'lucide-react';
+import { Globe2, PlusSquare, Calendar, BookOpen, Heart, Mail, Phone, MapPin, Clock } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 // Swiper imports
@@ -147,7 +147,14 @@ const HomePage = () => {
                   <div className="detail-icon"><MapPin size={20} /></div>
                   <div>
                     <h4 style={{marginBottom: '5px', fontSize: '14px'}}>{t('contact.location')}</h4>
-                    <p style={{margin: 0, fontSize: '14px', opacity: 0.8}}>33/CTWats Sec- Ody, 20300 - 43256</p>
+                    <p style={{margin: 0, fontSize: '14px', opacity: 0.8}}>{t('contact.address')}</p>
+                  </div>
+                </div>
+                <div className="detail-item">
+                  <div className="detail-icon"><Clock size={20} /></div>
+                  <div>
+                    <h4 style={{marginBottom: '5px', fontSize: '14px'}}>{t('hero.schedule').split(':')[0]}:</h4>
+                    <p style={{margin: 0, fontSize: '14px', opacity: 0.8}}>{t('hero.schedule').split(':')[1]}</p>
                   </div>
                 </div>
               </div>

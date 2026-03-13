@@ -14,6 +14,8 @@ const Footer = () => {
             </Link>
             <div className="footer-info">
               <p className="text-sm opacity-70 mb-2">+1 (123) 456-7890</p>
+              <p className="text-sm opacity-70 mb-1">Calle Flores y Malecón, al lado de Radio Libre</p>
+              <p className="text-sm opacity-70 mb-2">{t('hero.schedule')}</p>
               <p className="text-sm opacity-70">info@maranathamission.org</p>
             </div>
           </div>

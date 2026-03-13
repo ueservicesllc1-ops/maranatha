@@ -20,6 +20,7 @@ const resources = {
       "hero": {
         "label": "WORLD MISSION MARANATHA",
         "title": "Spread the Gospel to Every Creature",
+        "schedule": "Services: Sundays at 9:30 AM",
         "cta": "GET INVOLVED"
       },
       "highlights": {
@@ -45,6 +46,7 @@ const resources = {
         "call": "Call Us",
         "email": "Email",
         "location": "Location",
+        "address": "Calle Flores y Malecón, next to Radio Libre",
         "form": {
           "name": "Full Name",
           "name_placeholder": "Your Name",
@@ -179,6 +181,7 @@ const resources = {
       "hero": {
         "label": "MISIÓN MUNDIAL MARANATHA",
         "title": "Llevad el Evangelio a Toda Criatura",
+        "schedule": "Servicios: Domingos a las 9:30 AM",
         "cta": "PARTICIPAR"
       },
       "highlights": {
@@ -204,6 +207,7 @@ const resources = {
         "call": "Llámanos",
         "email": "Correo",
         "location": "Ubicación",
+        "address": "Calle Flores y Malecón, al lado de Radio Libre",
         "form": {
           "name": "Nombre Completo",
           "name_placeholder": "Tu Nombre",
