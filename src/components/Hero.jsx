@@ -22,7 +22,7 @@ const Hero = () => {
               </div>
             </div>
             <div className="hero-logo-side">
-              <img src="/images/banner-logo.png" alt="Maranatha Logo" className="hero-large-logo" />
+              <img src="/images/icono2.png" alt="Maranatha Logo" className="hero-large-logo" />
             </div>
           </div>
         </div>
